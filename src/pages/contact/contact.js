@@ -13,7 +13,7 @@ function Contact() {
     const name = document.getElementById("name").value;
     const message = document.getElementById("message").value;
     window.location.href = `mailto:spencer.perkins44sp@gmail.com?subject=${encodeURIComponent(
-      name
+      name,
     )}&body=${encodeURIComponent(message)}`;
   };
 

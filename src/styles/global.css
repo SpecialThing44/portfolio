@@ -48,5 +48,6 @@
   background: #555;
 }
 html {
+  transition: background-color 500ms ease;
   overflow-y: scroll;
 }

@@ -1,3 +1,18 @@
+export const themeColors = {
+  light: {
+    background: "#e5e7eb", // bg-gray-200
+    text: "#000000", // text-black
+    box: "#cbd5e1", // bg-slate-300
+    border: "#d1d5db", // border-gray-300
+  },
+  dark: {
+    background: "#1a202c", // bg-gray-900
+    text: "#ffffff", // text-white
+    box: "#1e293b", // bg-slate-800
+    border: "#4338ca", // border-indigo-700
+  },
+};
+
 export function getThemeStyles(theme) {
   const backgroundColor =
     theme === "light"

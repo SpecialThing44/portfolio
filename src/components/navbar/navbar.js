@@ -52,36 +52,29 @@ const MenuItem = (toggleMenuFunction) => {
 const Navbar = () => {
   const { theme } = useContext(ThemeContext);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate();
+
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-  const navigate = useNavigate();
-  const viewNavigate = (newRoute, section) => {
-    if (!document.startViewTransition) {
-      navigate(newRoute);
-    } else {
-      document.startViewTransition(() => {
-        navigate(newRoute);
-      });
 
-      setTimeout(() => {
-        if (section) {
-          console.log(section);
-          const sectionElement = document.getElementById(section);
-          if (sectionElement) {
-            const rect = sectionElement.getBoundingClientRect();
-            const scrollTop =
-              window.pageYOffset || document.documentElement.scrollTop;
-            const top = rect.top + scrollTop - 100;
-            console.log("top", top);
-            window.scrollTo({
-              top: top,
-              behavior: "smooth",
-            });
-          }
+  const viewNavigate = (newRoute, section) => {
+    navigate(newRoute);
+    setTimeout(() => {
+      if (section) {
+        const sectionElement = document.getElementById(section);
+        if (sectionElement) {
+          const rect = sectionElement.getBoundingClientRect();
+          const scrollTop =
+            window.pageYOffset || document.documentElement.scrollTop;
+          const top = rect.top + scrollTop - 100;
+          window.scrollTo({
+            top: top,
+            behavior: "smooth",
+          });
         }
-      }, 100);
-    }
+      }
+    }, 100);
   };
 
   return (
