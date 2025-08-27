@@ -2,7 +2,6 @@ import { Link, useNavigate } from "react-router-dom";
 import ThemeToggleButton from "../themeToggleButton/themeToggleButton";
 import { ThemeContext } from "../../contexts/themeContext";
 import React, { useState, useContext } from "react";
-// ...existing code...
 import "./navbar.css";
 
 const NavbarItem = ({ text, route, navigateFunction }) => {
@@ -53,14 +52,12 @@ const MenuItem = (toggleMenuFunction) => {
 const Navbar = () => {
   const { theme } = useContext(ThemeContext);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  // ...existing code...
   const navigate = useNavigate();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  // Navigation and scrolling logic
   const viewNavigate = (newRoute, section) => {
     navigate(newRoute);
     setTimeout(() => {
@@ -68,7 +65,8 @@ const Navbar = () => {
         const sectionElement = document.getElementById(section);
         if (sectionElement) {
           const rect = sectionElement.getBoundingClientRect();
-          const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+          const scrollTop =
+            window.pageYOffset || document.documentElement.scrollTop;
           const top = rect.top + scrollTop - 100;
           window.scrollTo({
             top: top,

@@ -11,6 +11,14 @@
     />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <title>Spencer's Portfolio</title>
+    <script>
+      // Apply saved theme to prevent flash of white background on reload
+      (function() {
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        const bgColor = savedTheme === 'dark' ? '#1a202c' : '#e5e7eb';
+        document.documentElement.style.backgroundColor = bgColor;
+      })();
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
