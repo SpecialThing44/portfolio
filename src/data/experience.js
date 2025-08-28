@@ -2,17 +2,21 @@ export const experience = [
   {
     id: 0,
     title: "Software Engineer @ Garner Distributed Workflow",
-    date: "2024 - Present",
+    date: "2024 - 2025",
     description:
-      "My first industry internship. I have already learned an incredible amount from engineers who have been coding for twice my lifetime. I interact very closely with all parts of the system, including core components, and even the project side. I have been able to feel real impact, as I regularly write and release production code to be used by fortune 10 energy companies.",
+      "My first industry internship. I learned an incredible amount from highly experienced engineers from all parts of the field. I appreciated not being treated as an 'intern', but just another member of the dev team, who pulls off the same Jira backlog and does the same tasks as everyone else. It was true fullstack development, as I worked on everything including database, backend, frontend, jobs/imports, various microservices, build/infrastructure (Github Actions, k8s, and Google Cloud), UI/UX and more. It was an Agile/Xp team of highly skilled generalists, and it was a priveledge to work there.",
     accomplishments: [
-      "Implemented an entire unified filtering system from scratch for a complex logistics system, participating in the design of the filters, and increasing the capability and usability of the filtering system.",
-      "Wrote E2E tests in both Cypress and Playwright",
-      "Developed CronJobs to handle data imports from a variety of external vendor APIs",
+      "Maintained and significantly upgraded ONgDB (Open source Neo4J fork), and migrated our entire production database (>1 billion nodes) to it.",
+      "Implemented and designed an entire logistical filtering DSL from scratch, increasing the capability and usability of the filtering system.",
+      "Created a variety of k8s infrastructure in dhall and yaml, github actions, and other google cloud configuration.",
       "Refactored large parts of the frontend to remove significant duplicatation (Thousands of lines) and make components more modular",
+      "Developed CronJobs to handle millions of rows of data imports from a variety of external vendor APIs",
+      "Implemented self signup through Auth0 API alongside our existing SSO and user import systems",
+      "Wrote E2E tests in both Cypress and Playwright",
     ],
     tags: [
       "Scala",
+      "ZIO",
       "Play",
       "Angular",
       "Typescript",
@@ -41,8 +45,9 @@ export const experience = [
       "Researched biology and machine learning, keeping up to date on cutting edge research in the field, and brainstorming projects of our own.",
       "Organized and distributed work to a team of 4 other developers.",
       "Managed the use of a shared workstation including multiple environments and operating systems",
-      "Currently developing a paper on creating a multi-armed model to predict protein functionality with only ~120 data points, and generate new functional proteins using a genetic algorithm",
-      "Also currently working on a meta analysis of protein LLMs and their performance with QLoRA adaptions.",
+      "Developed a paper on creating a multi-armed model to predict protein functionality with only ~120 data points, and generate new functional proteins using a genetic algorithm",
+      "Worked on a meta analysis of protein LLMs and their performance with QLoRA adaptions.",
+      "Published two papers at ICLR 2025 (openreview.net/forum?id=sfTXIiu7Op, openreview.net/forum?id=KBMxaCSwpB)",
     ],
     tags: [
       "Python",

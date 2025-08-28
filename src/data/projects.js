@@ -1,17 +1,27 @@
 export const projects = [
   {
     id: 0,
+    title: "Recipe Website",
+    date: "2025",
+    description:
+      "Passion project for keeping my recipes stored and accessible. Lots of fun design like almost fully generic controller code. Strong use of interfaces. Some unnecessary exercises like writing my own simple auth, which I would never recommend. Social network design between saving recipes and having ingredients as graph nodes with weighted relationships from recipes. Allows for easy analytical queries to recommend recipes",
+    tags: ["Scala", "ZIO", "Neo4J", "Angular"],
+    codeLink: "https://github.com/specialthing44/recipe-website",
+    projectLink: "https://github.com/specialthing44/recipe-website",
+  },
+  {
+    id: 1,
     title: "Portfolio Website",
     date: "2024",
     description:
       "This site was built using ReactJs and Tailwind CSS. It is a fairly standard static single page application. I tend to not believe in over-engineering things, and I have a lot more interest in UX than UI. Thus I have tried to keep the site as simple as possible, while still being visually appealing. I've learned some things from making this, as this was my first real web project, for example, I will never use JS instead of TS unless I have to.",
     image: `${process.env.PUBLIC_URL}/portfolio.png`,
     tags: ["ReactJs", "Tailwind CSS"],
-    codeLink: "https://github.com/",
-    projectLink: "example.com",
+    codeLink: "https://github.com/specialthing44/portfolio",
+    projectLink: "https://spencer-perkins.vercel.app/",
   },
   {
-    id: 1,
+    id: 2,
     title: "Interactive Research Platform",
     date: "2023",
     description:
@@ -26,7 +36,7 @@ export const projects = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     title: "PetFinder Clone",
     date: "2023",
     description:
@@ -34,7 +44,7 @@ export const projects = [
     tags: ["React Js", "Python", "Django", "RestApi", "Bootstrap"],
   },
   {
-    id: 3,
+    id: 4,
     title: "Java Tamagotchi Game",
     date: "2022",
     description:
@@ -42,7 +52,7 @@ export const projects = [
     tags: ["Java", "Swing", "MVC", "SOLID", "JUnit"],
   },
   {
-    id: 4,
+    id: 5,
     title: "Predictive Model with Web UI",
     date: "2021",
     description:
