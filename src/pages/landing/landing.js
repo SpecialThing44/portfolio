@@ -60,12 +60,13 @@ const LandingPage = () => {
 
           <p className="text-lg mt-4">
             I'm a computer science specialist at the University of Toronto. I
-            work as a fulltime software engineer writing production code for
-            fortune 10 companies, and part-time as an ML researcher for a
-            computational biology lab. On the side, I create small projects to
-            solve problems that matter to me, and outside of work, I'm an avid
-            musician, and I've been playing the piano for 16 years. I'm also big
-            cooking, and I'm working on my own recipe website.
+            just finished a 16 month co-op as a fulltime software engineer at
+            Garner writing production code for fortune 10 companies at, and I
+            also work part-time as an ML researcher for a computational biology
+            lab. On the side, I create small projects to solve problems that
+            matter to me, and outside of work, I'm an avid musician, and I've
+            been playing the piano for 16 years. I'm also big into cooking, and
+            I'm working on my own recipe website.
           </p>
         </div>
       </div>
