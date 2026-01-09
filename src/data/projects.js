@@ -5,12 +5,30 @@ export const projects = [
     date: "2025",
     description:
       "Passion project for keeping my recipes stored and accessible. Lots of fun design like almost fully generic controller code. Strong use of interfaces. Some unnecessary exercises like writing my own simple auth, which I would never recommend. Social network design between saving recipes and having ingredients as graph nodes with weighted relationships from recipes. Allows for easy analytical queries to recommend recipes",
-    tags: ["Scala", "ZIO", "Neo4J", "Angular"],
+    tags: [
+      "Scala",
+      "ZIO",
+      "Neo4J",
+      "Angular",
+      "Mailgun",
+      "Cloudflare",
+      "Docker",
+      "SeaweedFS",
+      "Authentik",
+    ],
     codeLink: "https://github.com/specialthing44/recipe-website",
-    projectLink: "https://github.com/specialthing44/recipe-website",
+    projectLink: "https://cooking.spencers.cc/",
   },
   {
     id: 1,
+    title: "Key-Value Store",
+    date: "2025",
+    description:
+      "A key-value store built in C++ from scratch. Implements a log-structured merge tree (LSM tree) with Bloom Filters for efficient write operations and uses a combination of in-memory and on-disk storage to handle large datasets. Custom buffer management and file I/O optimizations are included to enhance performance. Supports basic operations such as put, get, and delete, along with range queries.",
+    tags: ["C++"],
+  },
+  {
+    id: 2,
     title: "Portfolio Website",
     date: "2024",
     description:
@@ -21,7 +39,7 @@ export const projects = [
     projectLink: "https://spencer-perkins.vercel.app/",
   },
   {
-    id: 2,
+    id: 3,
     title: "Interactive Research Platform",
     date: "2023",
     description:
@@ -36,7 +54,7 @@ export const projects = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     title: "PetFinder Clone",
     date: "2023",
     description:
@@ -44,7 +62,7 @@ export const projects = [
     tags: ["React Js", "Python", "Django", "RestApi", "Bootstrap"],
   },
   {
-    id: 4,
+    id: 5,
     title: "Java Tamagotchi Game",
     date: "2022",
     description:
@@ -52,7 +70,7 @@ export const projects = [
     tags: ["Java", "Swing", "MVC", "SOLID", "JUnit"],
   },
   {
-    id: 5,
+    id: 6,
     title: "Predictive Model with Web UI",
     date: "2021",
     description:
