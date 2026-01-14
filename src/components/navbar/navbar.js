@@ -95,7 +95,7 @@ const Navbar = () => {
           } w-full lg:flex lg:w-auto lg:order-1" `}
           id="navbar-sticky"
         >
-          <ul className="flex flex-col items-end p-4 lg:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0 lg:bg-white dark:bg-gray-800 lg:dark:bg-gray-900 dark:border-gray-700">
+          <ul className="flex flex-col items-end p-4 lg:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0 bg-gray-800 lg:dark:bg-gray-900 dark:border-gray-700">
             <li className="pt-2 pb-2">
               <span className={`theme-text pl-3 pr-3`}>
                 Theme: {theme.charAt(0).toUpperCase() + theme.slice(1)}
