@@ -56,8 +56,7 @@ const SkillImage = styled.img`
 
 const Skills = () => {
   const { theme } = useContext(ThemeContext);
-  const { backgroundColor, textColor, boxColor, borderColor } =
-    getThemeStyles(theme);
+  const { backgroundColor, textColor, borderColor } = getThemeStyles(theme);
 
   return (
     <Container>

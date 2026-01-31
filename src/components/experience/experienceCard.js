@@ -23,8 +23,7 @@ const TitleLinkContainer = ({ children }) => (
 
 const ExperienceCard = ({ job }) => {
   const { theme } = useContext(ThemeContext);
-  const { backgroundColor, textColor, boxColor, borderColor } =
-    getThemeStyles(theme);
+  const { backgroundColor, textColor, boxColor } = getThemeStyles(theme);
   return (
     <Card backgroundColor={backgroundColor}>
       <TitleLinkContainer>

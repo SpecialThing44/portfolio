@@ -1,7 +1,7 @@
-import React, { useContext } from "react";
+import React from "react";
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
-import { ThemeContext, ThemeProvider } from "./contexts/themeContext";
+import { ThemeProvider } from "./contexts/themeContext";
 import "./styles/global.css";
 import Navbar from "./components/navbar/navbar";
 import Footer from "./components/footer/footer";
@@ -11,7 +11,6 @@ import Contact from "./pages/contact/contact";
 
 function AnimatedRoutes() {
   const location = useLocation();
-  const { theme } = useContext(ThemeContext);
 
   return (
     <TransitionGroup>

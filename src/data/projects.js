@@ -16,6 +16,7 @@ export const projects = [
       "SeaweedFS",
       "Authentik",
     ],
+    image: `${process.env.PUBLIC_URL}/recipe.png`,
     codeLink: "https://github.com/specialthing44/recipe-website",
     projectLink: "https://cooking.spencers.cc/",
   },
