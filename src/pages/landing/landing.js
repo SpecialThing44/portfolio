@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect } from "react";
 import { ThemeContext } from "../../contexts/themeContext";
 import { getThemeStyles } from "../../utils/themeStyles";
 import Skills from "../../components/skills/skills";
@@ -13,7 +13,6 @@ import "./landing.css";
 const LandingPage = () => {
   const { theme } = useContext(ThemeContext);
   const { backgroundColor, textColor, boxColor } = getThemeStyles(theme);
-  const [openModal, setOpenModal] = useState({ state: false, project: null });
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
